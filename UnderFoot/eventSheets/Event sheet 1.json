@@ -1,5 +1,370 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Every Tick Player Animation Is on Player position"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 968710531280106
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerAnimation",
+					"sid": 674194612446203,
+					"parameters": {
+						"x": "PlayerBox.X",
+						"y": "PlayerBox.Y"
+					}
+				}
+			],
+			"sid": 651110688863894
+		},
+		{
+			"eventType": "comment",
+			"text": "Player Animation Animations & Movement"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 577332386844437,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 375987589819641,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 105943561683157,
+					"parameters": {
+						"animation": "\"Walking (Back)\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "PlayerBox",
+					"sid": 859147896005008,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 269785781741847,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 338155698865531,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 148912915196452,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 974192559962708,
+					"parameters": {
+						"animation": "\"Walking (Left)\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "PlayerBox",
+					"sid": 206421416636572,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 666566244432472,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 970966998944280,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 671537669414591,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 143095535092527,
+					"parameters": {
+						"animation": "\"Walking (Front)\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "PlayerBox",
+					"sid": 888814747899432,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 539988243116495,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 456234599113023,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 215301331220838,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 115345407087448,
+					"parameters": {
+						"animation": "\"Walking (Right)\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "simulate-control",
+					"objectClass": "PlayerBox",
+					"sid": 708086932683840,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 967186245104966,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 633397052951875,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 513991016577335,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 489742162115355,
+					"parameters": {
+						"animation": "\"Idle (Back)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 153378896257388,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 581075181874262,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 850183488484868,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 106893502741699,
+					"parameters": {
+						"animation": "\"Idle (Left)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 923761104554103,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 341355158532954,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 941181956126817,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 618542088194073,
+					"parameters": {
+						"animation": "\"Idle (Front)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 114528283874733,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 786579641284456,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 545170933116751,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 587275670283808,
+					"parameters": {
+						"animation": "\"Idle (Right)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 360762878154143,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "To Not Walk On start Layout"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 199029002444363
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 874660815605380,
+					"parameters": {
+						"animation": "\"Idle (Front)\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 228563614816763
+		}
+	],
 	"sid": 764280124824215
 }

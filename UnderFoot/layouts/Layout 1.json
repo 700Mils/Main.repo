@@ -7,46 +7,9 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PlayerAnimation",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Walking (Front)",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"sid": 742619396128695,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 742619396128695,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1444.2207241790336,
-						"y": -39.73388818456894,
-						"width": 63.10600982445999,
-						"height": 61.03433042783848,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "PlayerBox",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -80,10 +43,47 @@
 					"world": {
 						"x": 47.654766689840756,
 						"y": 363.30053100668766,
-						"width": 37.19176599475941,
-						"height": 32.973473810113944,
+						"width": 48.417259,
+						"height": 87.052341,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerAnimation",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walking (Front)",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"sid": 742619396128695,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 742619396128695,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1456.800434323961,
+						"y": -62.15405625179583,
+						"width": 48.41725871155096,
+						"height": 87.05234128365112,
+						"originX": 0.4057971014492754,
+						"originY": 0.6134453781512605,
 						"color": [
 							1,
 							1,
