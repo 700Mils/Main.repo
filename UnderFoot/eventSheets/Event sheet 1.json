@@ -364,6 +364,82 @@
 				}
 			],
 			"sid": 228563614816763
+		},
+		{
+			"eventType": "comment",
+			"text": "Dialogue"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "PlayerBox",
+					"sid": 214020206844462,
+					"parameters": {
+						"object": "DialogueHitbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "DialogueHitbox",
+					"sid": 329625640260478,
+					"parameters": {
+						"object": "Sprite",
+						"layer": "\"Dailogue Layer\"",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Sprite",
+					"sid": 281206567006289,
+					"parameters": {
+						"x": "260.4671478284156"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "DialogueHitbox",
+					"sid": 333211744151180,
+					"parameters": {
+						"instance-variable": "Event",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 950544525834619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 223460426945752
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite",
+					"sid": 392007443222528
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "DialogueHitbox",
+					"sid": 604638980045615,
+					"parameters": {
+						"instance-variable": "Event",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 386152910288030
 		}
 	],
 	"sid": 764280124824215
